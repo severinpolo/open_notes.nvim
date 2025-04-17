@@ -2,11 +2,6 @@
 local M = {}
 
 M.config_open_note = function(notes_dir, default_note, default_note_function)
-  print(notes_dir)
-  print(default_note)
-  print(default_note_function)
-  print(default_note_function ~= "")
-
   local buf = vim.api.nvim_create_buf(false, true) -- Create a new buffer
 
   local width = math.floor(vim.o.columns * 0.8)
